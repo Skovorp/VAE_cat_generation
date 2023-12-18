@@ -1,0 +1,18 @@
+dataset: 
+  general:
+    seed: 228
+    val_part: 0.1
+    dataset_path: /home/ubuntu/data/cats/cats
+  train:
+    part: train
+    limit: 128
+  val:
+    part: train
+    limit: 128
+training:
+  batch_size: 128
+  lr: 1.0e-4
+  weight_decay: 1.0E-4
+  num_epochs: 100
+  epoch_size: null
+  save_path: '/home/ubuntu/saved/run_{pretty_time}'

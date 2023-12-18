@@ -3,3 +3,7 @@ numpy
 pandas
 tqdm
 wandb
+torchvision
+Pillow
+python-dotenv
+matplotlib

@@ -1,0 +1,26 @@
+dataset: 
+  general:
+    seed: 228
+    val_part: 0.1
+    dataset_path: /home/ubuntu/data/cats/cats
+  train:
+    part: train
+    limit: null
+  val:
+    part: val
+    limit: null
+training:
+  batch_size: 512
+  lr: 1.0e-3
+  weight_decay: 1.0E-2
+  num_epochs: 1000
+  epoch_size: null
+  save_path: '/home/ubuntu/saved/run_{pretty_time}'
+model:
+  d: 256
+  encoder_hidden: 8000
+  encoder_num: 4
+  decoder_hidden: 8000
+  decoder_num: 4
+  clamp: 2.5
+  sigma_loss: 5
