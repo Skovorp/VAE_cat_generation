@@ -22,5 +22,5 @@ model:
   encoder_num: 4
   decoder_hidden: 8000
   decoder_num: 4
-  clamp: 2.5
-  sigma_loss: 5
+  clamp: 3
+  sigma_loss: 4

@@ -92,8 +92,8 @@ def train(model, optimizer: torch.optim.Optimizer, train_loader: DataLoader, val
         img_save_path = os.path.join(cfg['training']['save_path'], f'epoch_{epoch}.png')
         save_sample_images(model, img_save_path, cfg)
         wandb.log({"example": wandb.Image(img_save_path)})
-        # if cfg['training']['save_path'] is not None:
-        #     torch.save(model.state_dict(), os.path.join(cfg['training']['save_path'], 'model_weights.pth'))
+        if cfg['training']['save_path'] is not None:
+            torch.save(model.state_dict(), os.path.join(cfg['training']['save_path'], 'model_weights.pth'))
 
 
 
